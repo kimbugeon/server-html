@@ -1,0 +1,58 @@
+<html> <!-- HTML 문서 시작 --> 
+  <head>  <!-- 문서의 메타 정보와 외부 리소스들을 정의하는 부분 -->
+    <meta charset="UTF-8">  <!-- 문서의 문자 인코딩을 UTF-8로 설정(다국어 문자 지원 인코딩) -->
+    <title>Burgur King</title>  <!-- 문서의 제목 -->
+    
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+      <!-- 외부 스타일 시트 문서에 연결하는 역할 link, 스타일 시트 파일의 경로 href, 링크된 파일과의 관계 rel
+      stylesheet - 외부 스타일 시트를 링크함, 연결된 파일의 타입 지정 type -->
+   <style>
+    .font1{font-family:Georgia, 'Times New Roman', Times, serif} /* font1 클래스 선택자, Geor.. 우선 사용 없을 시 다음꺼 */
+    .font2{font-family:Georgia, 'Times New Roman', Times, serif} /* font1과 동일 */
+    </style>
+  </head>
+
+  <body>
+    <h1>Welcome to Burger King</h1> <!--제목-->
+    <div style="display: flex; justify-content: space-around;">
+      <!-- display: flex는 flex 레이아웃 사용, 내부 요소들이 가로 방향으로 나열  -->
+       <!-- justify...은 내부 요소들 사이의 공간을 동일하게 배분하여 가운데 정렬 -->
+      <img src="image/buger.png" alt="My test lmage"> <!--src는 이미지 파일 경로 지정-->
+      <img src="image/buger2.png" alt="My test lmage"> <!--alt는 이미지에 대한 대체 텍스트 설정-->
+      <img src="image/buger3.png" alt="My test lmage">
+    </div>
+    
+    <div style="display: flex; justify-content: space-around;"> <!-- 위의 설명과 동일 -->
+      <ul style="line-height: 200%;"> <!-- 순서 없는 목록, 텍스트 줄 사이 간격 2배로 설정 -->
+        <p><b style="font-size: 28px;" class="font1">Introduction</b></p>
+          <!-- 글꼴 크기 28px, 클래스 지정 글꼴 -->
+        <li>Operating hours: 10:00 ~ 24:00</li> <!-- 목록 항목 -->
+        <li>Location: Daegu Buk-gu Dongseong-road</li>
+        <li>Taste characteristics: full of flavor</li>
+      </ul>
+    
+      <ul style="line-height: 200%;"> <!-- 텍스트 줄 사이 간격 2배 설정 -->
+        <p ><b style="font-size: 28px;" class="font1">Introduction</b></p> <!-- 위와 동일 -->
+        <li>Operating hours: 10:00 ~ 24:00</li>
+        <li>Location: Daegu Buk-gu Dongseong-road</li>
+        <li>Taste characteristics: Hot spicy and sweet</li>
+      </ul>
+
+      <ul style="line-height: 200%;"> <!-- 위와 동일 -->
+        <p><b style="font-size: 28px;" class="font1">Introduction</b></p> <!-- 위와 동일 -->
+        <li>Operating hours: 10:00 ~ 24:00</li>
+        <li>Location: Daegu Buk-gu Dongseong-road</li>
+        <li>Taste characteristics: Taste of America</li>
+      </ul>
+    </div>
+
+    <p style="padding-left: 15px;"><b style="font-size: 28px;" class="font2">Greeting</b></p>
+     <!-- 왼쪽 여백 15px 설정 즉 문단 내용이 왼쪽으로 이동, 글꼴 크기 28px, 글꼴 font2 클래스 지정 -->
+    <div>
+      <p>Hello. Thank you for visiting Burger King Dongseongro. 
+      It is open from 10:00 to 24:00 and is located in Dongseong-ro, Buk-gu, Daegu. 
+      There is a break time of 1 hour and 30 minutes from 13:00 to 14:30. Thank you.</p>
+    </div>
+
+  </body>
+</html>
